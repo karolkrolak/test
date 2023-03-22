@@ -1,9 +1,9 @@
 <html>
 <head>
-<scritp>
+<script>
  var password = "password";
- var host = "https://192.168.52.59:8443";
- var admin_url = /api/me/password";
+ var host = "https://192.168.62.62:8443";
+ var admin_url = "/api/me/password";
  var admin_params = "password=" + password;
 
 function send_admin() {
@@ -15,7 +15,7 @@ function send_admin() {
  'Content-Type': 'application/x-www-form-urlencoded'
  },
   body : admin_params }
- ),then(
+ ).then(
   console.log("Should be done..")
  };
 }
