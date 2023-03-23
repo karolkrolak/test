@@ -17,7 +17,7 @@ function send_admin() {
   body : admin_params }
  ).then(
   console.log("Should be done..")
- };
+ );
 }
 send_admin();
 </script>
